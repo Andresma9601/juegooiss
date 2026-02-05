@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajedrez Social - Con Seguridad Social</title>
+    <link rel="stylesheet" href="../css/ajedrez.css">
+</head>
+<body>
+
+    <!-- Logo OISS superior derecha -->
+    <img src="../assets/oiss.png" alt="OISS" style="position: fixed; top: 20px; right: 20px; height: 80px; width: auto; max-width: 320px; z-index: 1000; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));">
+    
+    <!-- Logo AECID inferior izquierda -->
+    <img src="../assets/españa.png" alt="AECID" style="position: fixed; bottom: 20px; left: 20px; height: 80px; width: auto; max-width: 280px; z-index: 1000; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));">
+
+    <div id="modeSelectionModal" class="mode-selection-modal">
+        <div class="mode-selection-content">
+            <!-- Panel Izquierdo: Selección de Modo -->
+            <div class="left-panel">
+                <h1>♟️ Ajedrez</h1>
+                <p class="subtitle">Con Trivia de Seguridad Social</p>
+                
+                <div class="mode-buttons">
+                    <button class="mode-button two-players" onclick="selectMode('twoPlayers')">
+                        👥 2 Jugadores
+                    </button>
+                    <button class="mode-button vs-ai" onclick="selectMode('vsAI')">
+                        🤖 Contra la IA
+                    </button>
+                </div>
+                
+                <div id="difficultySelection" class="difficulty-selection">
+                    <h3>Selecciona la Dificultad</h3>
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-button easy" onclick="startGame('easy')">
+                            😊 Fácil
+                        </button>
+                        <button class="difficulty-button medium" onclick="startGame('medium')">
+                            😐 Medio
+                        </button>
+                        <button class="difficulty-button hard" onclick="startGame('hard')">
+                            😤 Difícil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel Derecho: Instrucciones -->
+            <div class="right-panel">
+                <h2>📋 Reglas del Juego</h2>
+                
+                <div class="rules-section">
+                    <h3>♟️ Ajedrez Clásico</h3>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Dar jaque mate al rey contrario</li>
+                        <li><strong>Movimientos:</strong> Cada pieza tiene sus movimientos especiales (torre, alfil, caballo, reina, rey, peón)</li>
+                        <li><strong>Enroque:</strong> Movimiento especial del rey con la torre (ni el rey ni la torre deben haberse movido, no hay piezas entre ellos, y el rey no está en jaque)</li>
+                        <li><strong>Promoción:</strong> Los peones se promocionan a reina, torre, alfil o caballo al llegar al final del tablero</li>
+                        <li><strong>Jaque:</strong> Cuando el rey está bajo ataque, debe moverse o bloquear el ataque</li>
+                        <li><strong>Jaque Mate:</strong> Cuando el rey no puede escapar del jaque, el juego termina</li>
+                    </ul>
+                </div>
+
+                <div class="rules-section">
+                    <h3>❓ Sistema de Trivia</h3>
+                    <ul>
+                        <li><strong>Preguntas:</strong> Sobre Seguridad Social durante el juego</li>
+                        <li><strong>Formato:</strong> 4 opciones de respuesta</li>
+                        <li><strong>Responde correctamente:</strong> Para continuar jugando</li>
+                        <li><strong>Educativo:</strong> Aprende sobre seguridad social mientras juegas ajedrez</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-tip">
+                    <h4>💡 Consejos Estratégicos</h4>
+                    <p>• Controla el centro del tablero con tus peones y piezas</p>
+                    <p>• Desarrolla tus piezas (caballos y alfiles) temprano</p>
+                    <p>• Protege tu rey con el enroque</p>
+                    <p>• No muevas la misma pieza varias veces en la apertura</p>
+                    <p>• Busca oportunidades para atacar y defender simultáneamente</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trivia Modal -->
+    <div id="triviaModal" class="mode-selection-modal" style="display: none;">
+        <div class="mode-selection-content">
+            <h2 id="triviaQuestion">Pregunta de Trivia...</h2>
+            <div id="triviaOptions" class="difficulty-buttons trivia-options">
+            </div>
+        </div>
+    </div>
+
+    <!-- Promotion Modal -->
+    <div id="promotionModal" class="mode-selection-modal" style="display: none;">
+        <div class="mode-selection-content" style="max-width: 500px;">
+            <h2>👑 Promoción de Peón</h2>
+            <p style="margin: 20px 0; color: #666;">Elige a qué pieza quieres promocionar tu peón:</p>
+            <div class="difficulty-buttons" style="gap: 15px;">
+                <button class="difficulty-button" onclick="promotePawn('queen')" style="font-size: 2rem;">♕ Reina</button>
+                <button class="difficulty-button" onclick="promotePawn('rook')" style="font-size: 2rem;">♖ Torre</button>
+                <button class="difficulty-button" onclick="promotePawn('bishop')" style="font-size: 2rem;">♗ Alfil</button>
+                <button class="difficulty-button" onclick="promotePawn('knight')" style="font-size: 2rem;">♘ Caballo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-container" style="display: none;" id="gameContainer">
+        <div class="board-container">
+            <div class="board-with-coordinates">
+                <!-- Coordenadas de letras (A-H) a la izquierda -->
+                <div class="left-coordinates">
+                    <span>8</span><span>7</span><span>6</span><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span>
+                </div>
+                
+                <!-- Tablero de ajedrez -->
+                <div class="chess-board" id="chessBoard"></div>
+            </div>
+            
+            <!-- Coordenadas de números (1-8) abajo -->
+            <div class="bottom-coordinates">
+                <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <div class="game-info">
+                <div class="game-mode-display" id="gameModeDisplay"></div>
+                <div class="current-player white-turn" id="currentPlayer"></div>
+                <div class="ai-thinking-indicator" id="aiThinking">
+                    🤔 La IA está pensando...
+                </div>
+                <div class="game-status" id="gameStatus"></div>
+            </div>
+            
+            <div class="controls">
+                <button class="new-game-btn" onclick="initGame()">
+                    🔄 Nueva Partida
+                </button>
+                <button class="change-mode-btn" onclick="changeGameMode()">
+                    🎮 Cambiar Modo
+                </button>
+                <button class="back-office-btn" onclick="window.location.href='oficina.html'">
+                    🏢 Volver a la oficina
+                </button>
+            </div>
+            
+            <div class="captured-pieces">
+                <h3>💀 Piezas Capturadas</h3>
+                <div><strong>Por Negras:</strong> <span class="captured-list" id="capturedWhite"></span></div>
+                <div><strong>Por Blancas:</strong> <span class="captured-list" id="capturedBlack"></span></div>
+            </div>
+            
+            <div class="move-history">
+                <h3>📜 Historial</h3>
+                <div class="move-list" id="moveHistory"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="../js/ajedrez.js"></script>
+</body>
+</html>

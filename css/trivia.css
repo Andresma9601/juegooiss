@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #000;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -2;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.btn-volver-oficina {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-volver-oficina:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+    background: linear-gradient(135deg, #ee5a24, #ff6b6b);
+}
+
+#trainingScreen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.6s forwards;
+}
+
+#trainingContent {
+    background: #000025;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+#trainingContent h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+#trainingStatsPanel {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #dee2e6;
+}
+
+#trainingStatsPanel > div > div {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#trainingStatsPanel > div > div > div:first-child {
+    color: #ffffff;
+}
+
+#trainingStatsPanel > div > div > div:last-child {
+    color: #6c757d;
+}
+
+#trainingQuestion {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #fffff;
+    text-align: center;
+    font-weight: 500;
+}
+
+#trainingOptions {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.training-option {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
+    text-align: left;
+    color: #2c3e50;
+}
+
+.training-option:hover {
+    background: #f8f9fa;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-color: #90cdf4;
+}
+
+.training-option.correct {
+    background: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+    font-weight: 700;
+    animation: correctPulse 0.6s ease-in-out;
+}
+
+.training-option.incorrect {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+    font-weight: 700;
+    animation: shake 0.6s ease-in-out;
+}
+
+.training-result {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.training-result.correct {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #28a745;
+}
+
+.training-result.incorrect {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #dc3545;
+}
+
+.training-button {
+    background: #4299e1;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    font-weight: 600;
+}
+
+.training-button:hover {
+    background: #3182ce;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.training-button.bg-yellow-500 {
+    background: #f59e0b;
+}
+
+.training-button.bg-yellow-500:hover {
+    background: #d97706;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.text-white {
+    color: #2c3e50;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes correctPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@media (max-width: 768px) {
+    .btn-volver-oficina {
+        top: 10px;
+        left: 10px;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    #trainingContent {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    #trainingContent h2 {
+        font-size: 2rem;
+    }
+
+    #trainingQuestion {
+        font-size: 1.2rem;
+    }
+
+    .training-option {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+
+    .training-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin: 3px;
+    }
+
+    #trainingStatsPanel {
+        padding: 15px;
+    }
+
+    #trainingStatsPanel > div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #trainingContent {
+        padding: 15px;
+    }
+
+    #trainingContent h2 {
+        font-size: 1.8rem;
+    }
+
+    #trainingQuestion {
+        font-size: 1.1rem;
+    }
+
+    .training-option {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+
+    .training-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    #trainingStatsPanel > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #trainingStatsPanel > div > div {
+        padding: 8px;
+    }
+    
+    #trainingStatsPanel > div > div > div:first-child {
+        font-size: 1.5rem;
+    }
+    
+    #trainingStatsPanel > div > div > div:last-child {
+        font-size: 0.8rem;
+    }
+}
+.trivia-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.trivia-header h2 {
+    margin: 0;
+}
+
+.btn-music {
+    background: linear-gradient(135deg, #6f42c1, #9b59b6);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.btn-music:hover {
+    background: linear-gradient(135deg, #5a369c, #8e44ad);
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+}
+
+.btn-music.muted {
+    background: linear-gradient(135deg, #dc3545, #e74c3c);
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.btn-music.muted:hover {
+    background: linear-gradient(135deg, #c82333, #dc2626);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+@media (max-width: 768px) {
+    .trivia-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .btn-music {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}

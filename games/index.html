@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decisiones de Vida - V2.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <audio id="musicCamino" loop preload="auto">
+        <source src="../assets/background.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="musicDecision" preload="auto">
+        <source src="../assets/decision.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="musicFinal" preload="auto">
+        <source src="../assets/victory.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="musicTrivia" preload="auto">
+        <source src="../assets/trivia.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="musicEventPositive" preload="auto">
+        <source src="../assets/positive.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="musicEventNegative" preload="auto">
+        <source src="../assets/negative.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="customOverlay" class="overlay"></div>
+    <div id="customConfirmModal" class="message-box-custom hidden">
+        <h3 id="confirmTitle"></h3>
+        <p id="confirmMessage"></p>
+        <div class="actions">
+            <button class="confirm-btn" id="confirmYesBtn">Sí</button>
+            <button class="cancel-btn" id="confirmNoBtn">No</button>
+        </div>
+    </div>
+    <div id="customAlertDialog" class="message-box-custom hidden">
+        <h3 id="alertDialogTitle"></h3>
+        <p id="alertDialogMessage"></p>
+        <div class="actions">
+            <button class="confirm-btn" id="alertDialogOkBtn">Aceptar</button>
+        </div>
+    </div>
+
+    <div id="instructionsScreen" class="instructions-screen">
+        <div class="instructions-content">
+            <h2>Cómo Jugar a Decisiones de Vida</h2>
+            <p class="subtitle">Tu objetivo es llegar al final del camino tomando las mejores decisiones para asegurar tu futuro financiero y personal.</p>
+            
+            <div class="instructions-grid">
+                <div class="instruction-item">
+                    <h3>🎲 Lanza el Dado</h3>
+                    <p>Cada turno, lanzarás el dado para saber cuántas casillas puedes moverte por el tablero.</p>
+                </div>
+                <div class="instruction-item">
+                    <h3>♟️ Mueve tu Ficha</h3>
+                    <p>Avanza por el tablero y enfréntate a los desafíos y oportunidades de cada casilla.</p>
+                </div>
+                <div class="instruction-item">
+                    <h3>📊 Gestiona tus Recursos</h3>
+                    <p>Equilibra tu <strong>Dinero, Salud, Ocio, Conocimiento y Pensión</strong>. ¡Cada decisión cuenta!</p>
+                </div>
+                <div class="instruction-item">
+                    <h3>💳 Sistema Financiero Avanzado</h3>
+                    <p>Maneja tus <strong>deudas, crédito e inversiones</strong>. ¡La responsabilidad financiera es clave para el éxito!</p>
+                </div>
+            </div>
+
+            <h4>Tipos de Casillas del Tablero:</h4>
+            <ul>
+                <li><strong>🧠 Trivia:</strong> Responde preguntas sobre seguridad social para ganar grandes recompensas.</li>
+                <li><strong>🃏 Carta del Destino:</strong> ¡El azar puede cambiarlo todo! Eventos aleatorios te afectarán.</li>
+                <li><strong>🏦 Aporte a Pensión:</strong> Invierte en tu futuro para asegurar una vejez tranquila.</li>
+                <li><strong>🚦 Encrucijada:</strong> Decisiones importantes con múltiples opciones que marcarán tu camino.</li>
+                <li><strong>⚡ Crisis:</strong> Eventos negativos que pondrán a prueba tu resistencia y capacidad de recuperación.</li>
+                <li><strong>🎯 Oportunidades:</strong> Decisiones de alto riesgo con grandes recompensas potenciales.</li>
+                <li><strong>📈 Inversiones:</strong> Centros especializados para hacer crecer tu dinero inteligentemente.</li>
+                <li><strong>📚 Estudio:</strong> Mejora tu conocimiento pero requiere tiempo y dinero.</li>
+                <li><strong>💼 Trabajo:</strong> Genera ingresos pero puede afectar tu salud y tiempo libre.</li>
+                <li><strong>🌴 Ocio:</strong> Recupera energía y disfruta la vida, pero cuesta dinero.</li>
+            </ul>
+
+            <h4>Sistema Financiero Completo:</h4>
+            <ul>
+                <li><strong>💰 Gestión de Dinero:</strong> Administra tus ingresos y gastos cuidadosamente.</li>
+                <li><strong>💳 Sistema de Deudas:</strong> Si tu dinero baja de 0, se convierte en deuda con intereses del 12%.</li>
+                <li><strong>📊 Credit Rating (0-100):</strong> Tu historial crediticio afecta las oportunidades de inversión disponibles.</li>
+                <li><strong>📈 Centro de Inversiones:</strong> Invierte en 4 tipos diferentes:
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>📈 <strong>Acciones:</strong> Riesgo medio, retorno 95% a 120%, madura en 3-4 turnos</li>
+                        <li>🏠 <strong>Bienes Raíces:</strong> Riesgo bajo, retorno 102% a 110%, madura en 5-7 turnos</li>
+                        <li>₿ <strong>Criptomonedas:</strong> Riesgo alto, retorno 60% a 140%, madura en 2-3 turnos</li>
+                        <li>🏪 <strong>Negocio Propio:</strong> Riesgo alto, retorno 85% a 125%, madura en 4-6 turnos</li>
+                    </ul>
+                </li>
+                <li><strong>🎯 Estrategia de Inversión:</strong> Diversifica tu portafolio, pero solo puedes tener una inversión activa por tipo.</li>
+                <li><strong>⚡ Inversiones Dinámicas:</strong> Los tiempos de maduración son más cortos para mantener el juego ágil y emocionante.</li>
+            </ul>
+
+            <h4>Sistema de Metas por Edad:</h4>
+            <ul>
+                <li><strong>30 años:</strong> Debes tener al menos $500 ahorrados</li>
+                <li><strong>40 años:</strong> Debes tener al menos $100 en tu pensión</li>
+                <li><strong>50 años:</strong> Debes tener conocimiento de al menos 50 puntos</li>
+                <li><strong>60 años:</strong> Debes tener al menos $300 en tu pensión</li>
+                <li><strong>⚠️ Importante:</strong> No cumplir estas metas resulta en penalizaciones severas.</li>
+            </ul>
+
+            <h4>Consejos para el Éxito:</h4>
+            <ul>
+                <li>🎯 <strong>Diversifica:</strong> No te enfoques solo en dinero, equilibra todos tus recursos.</li>
+                <li>📈 <strong>Invierte Temprano:</strong> Las inversiones necesitan tiempo para madurar.</li>
+                <li>💳 <strong>Evita Deudas:</strong> Los intereses pueden arruinar tu progreso.</li>
+                <li>🧠 <strong>Aprende:</strong> El conocimiento abre nuevas oportunidades.</li>
+                <li>❤️ <strong>Cuida tu Salud:</strong> Sin salud, el juego termina.</li>
+                <li>⚖️ <strong>Mantén Balance:</strong> El ocio es necesario para una vida plena.</li>
+            </ul>
+
+            <h4>📖 Glosario de Términos Financieros:</h4>
+            <div class="glossary-container" style="padding: 20px 0; margin: 15px 0;">
+                <div class="glossary-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
+                    <div class="glossary-item">
+                        <h5 style="color: #facc15; margin: 0 0 8px 0; font-size: 16px; font-weight: bold;">💳 Credit Rating (Calificación Crediticia)</h5>
+                        <p style="margin: 0; color: inherit;">Puntuación de 0 a 100 que mide tu confiabilidad para pagar deudas. Mientras más alta, mejores oportunidades de inversión tendrás.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h5 style="color: #facc15; margin: 0 0 8px 0; font-size: 16px; font-weight: bold;">💰 Sistema Financiero</h5>
+                        <p style="margin: 0; color: inherit;">Conjunto de herramientas para manejar dinero: ingresos, gastos, deudas, inversiones y pensiones. La base de tu estabilidad económica.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h5 style="color: #facc15; margin: 0 0 8px 0; font-size: 16px; font-weight: bold;">📈 Portafolio de Inversiones</h5>
+                        <p style="margin: 0; color: inherit;">Conjunto de diferentes inversiones (acciones, bienes raíces, etc.) que diversifican el riesgo y maximizan las ganancias.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h5 style="color: #facc15; margin: 0 0 8px 0; font-size: 16px; font-weight: bold;">💸 Deuda con Intereses</h5>
+                        <p style="margin: 0; color: inherit;">Dinero que debes pagar con un costo adicional (12% en este juego). Si no pagas a tiempo, la deuda crece automáticamente.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h5 style="color: #facc15; margin: 0 0 8px 0; font-size: 16px; font-weight: bold;">🏦 Pensión</h5>
+                        <p style="margin: 0; color: inherit;">Dinero ahorrado para tu vejez. Es fundamental aportar regularmente para asegurar una jubilación digna y cumplir las metas del juego.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h5 style="color: #facc15; margin: 0 0 8px 0; font-size: 16px; font-weight: bold;">⚡ Maduración de Inversiones</h5>
+                        <p style="margin: 0; color: inherit;">Tiempo que tarda una inversión en generar ganancias. Cada tipo tiene diferentes tiempos: criptomonedas (2-3 turnos), acciones (3-4 turnos).</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Sistema de Rutas de Inicio:</h4>
+            <ul>
+                <li><strong>📚 Estudio:</strong> +15 conocimiento, -8 ocio - Ideal para estrategias a largo plazo</li>
+                <li><strong>💼 Trabajo:</strong> +100 dinero, -5 ocio - Ventaja financiera inicial</li>
+                <li><strong>🌴 Ocio:</strong> +25 ocio, +10 salud - Comienza relajado y saludable</li>
+                <li><strong>💼🌴 Nómada Digital:</strong> +50 dinero, +15 ocio, -5 salud - Trabajo flexible</li>
+                <li><strong>📚🌴 Estudiante Viajero:</strong> +20 conocimiento, +15 ocio, -30 dinero</li>
+                <li><strong>📚💼 Emprendedor Académico:</strong> +25 conocimiento, +30 dinero, -15 salud</li>
+                <li><strong>⚖️ Vida Equilibrada:</strong> Bonificaciones moderadas en todo</li>
+            </ul>
+
+            <button onclick="mostrarMenu()" class="start-button">¡Entendido, listo para jugar!</button>
+            <button onclick="volverAOISS()" class="start-button" style="background-color: #059669; margin-top: 15px;">🏢 Volver a la oficina de la OISS</button>
+        </div>
+    </div>
+
+    <div id="startScreen" class="start-screen hidden">
+        <video id="startVideo" autoplay loop muted playsinline preload="auto" class="background-video">
+            <source src="../assets/2.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <div id="startContent" class="start-content video-overlay-content">
+            <h1 class="start-title">🎯 Decisiones de Vida</h1>
+            <p class="start-subtitle">Versión 2.0 - Sistema Financiero Avanzado</p>
+            <p style="margin-bottom: 30px; opacity: 0.8;">Simula tu vida, toma decisiones y construye tu futuro financiero</p>
+            <div class="player-selector">
+                <h3 style="margin-bottom: 15px;">Ingresa tu nombre:</h3>
+                <input type="text" id="playerNameInput" class="player-input" placeholder="Tu nombre..." maxlength="20">
+                <h3 style="margin-top: 25px; margin-bottom: 15px;">Elige tu personaje:</h3>
+                <div id="characterSelector" class="character-selector-grid"></div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <h3 style="margin-bottom: 15px; width: 100%; text-align: center; color: #ffffff; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Rutas Básicas:</h3>
+                <button id="pathStudyBtn" onclick="selectStartPath('study', {knowledge: 15, ocio: -8}, 'pathStudyBtn')" class="start-button btn-path-study"><span>📚 Estudio</span></button>
+                <button id="pathWorkBtn" onclick="selectStartPath('work', {dinero: 100, ocio: -5}, 'pathWorkBtn')" class="start-button btn-path-work"><span>💼 Trabajo</span></button>
+                <button id="pathLeisureBtn" onclick="selectStartPath('leisure', {ocio: 25, salud: 10}, 'pathLeisureBtn')" class="start-button btn-path-leisure"><span>🌴 Ocio</span></button>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 mt-6" style="max-width: 800px; margin: 1.5rem auto 0 auto;">
+                <h3 style="margin-bottom: 15px; width: 100%; text-align: center; color: #ffffff; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">Rutas Combinadas:</h3>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; width: 100%;">
+                    <button id="pathNomadBtn" onclick="selectCombinedPath('nomad', {dinero: 50, ocio: 15, salud: -5}, 'pathNomadBtn')" class="start-button btn-path-nomad btn-path-combined"><span>💼🌴 Nómada Digital</span></button>
+                    <button id="pathTravelerBtn" onclick="selectCombinedPath('traveler', {knowledge: 20, ocio: 15, dinero: -30}, 'pathTravelerBtn')" class="start-button btn-path-traveler btn-path-combined"><span>📚🌴 Estudiante Viajero</span></button>
+                    <button id="pathEntrepreneurBtn" onclick="selectCombinedPath('entrepreneur', {knowledge: 25, dinero: 30, salud: -15}, 'pathEntrepreneurBtn')" class="start-button btn-path-entrepreneur btn-path-combined"><span>📚💼 Emprendedor Académico</span></button>
+                    <button id="pathBalancedBtn" onclick="selectCombinedPath('balanced', {dinero: 20, knowledge: 10, ocio: 10, salud: 5, pension: 10}, 'pathBalancedBtn')" class="start-button btn-path-balanced btn-path-combined"><span>⚖️ Vida Equilibrada</span></button>
+                </div>
+            </div>
+            
+            <div class="flex justify-center mt-6">
+                <button onclick="volverAOISS()" class="start-button" style="background-color: #059669;">🏢 Volver a la oficina de la OISS</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="decisionModal" class="decision-modal hidden">
+        <div class="decision-content">
+            <h3 id="decisionTitle" class="decision-title">🚦 DECISIÓN IMPORTANTE</h3>
+            <div id="decisionDescription" class="decision-description"></div>
+            <div id="decisionOptions" class="decision-options"></div>
+        </div>
+    </div>
+
+    <div id="triviaModal" class="trivia-modal hidden">
+        <div class="trivia-content">
+            <h3 style="color: #facc15; font-size: 1.5rem; margin-bottom: 20px;">🧠 TRIVIA</h3>
+            <div id="triviaQuestion" class="trivia-question"></div>
+            <div id="triviaOptions" class="trivia-options"></div>
+            <div id="triviaResult" class="trivia-result hidden"></div>
+            <button id="triviaContinue" class="trivia-continue-btn hidden">Continuar</button>
+        </div>
+    </div>
+
+    <div id="investmentModal" class="decision-modal hidden">
+        <div class="decision-content">
+            <h3 class="decision-title">📈 CENTRO DE INVERSIONES</h3>
+            <div class="decision-description">
+                <p>¿En qué quieres invertir? Cada opción tiene diferentes riesgos y recompensas.</p>
+                <div id="marketTrends" style="background: #f0f9ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                    <h4>📊 Tu Situación Financiera:</h4>
+                    <div id="financialStatus">
+                        <p>💰 Dinero disponible: <span id="availableMoney">0</span></p>
+                        <p>💳 Credit Rating: <span id="currentCredit">100</span></p>
+                        <p>💸 Deuda actual: <span id="currentDebt">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="investmentOptions" class="decision-options">
+                <div class="investment-option" onclick="chooseInvestment('stocks')">
+                    <h4>📈 Acciones</h4>
+                    <p>Riesgo: Medio | Retorno: 95% a 120% | Tiempo: 3-4 turnos</p>
+                    <div class="investment-cost">Mínimo: $100</div>
+                </div>
+                <div class="investment-option" onclick="chooseInvestment('realEstate')">
+                    <h4>🏠 Bienes Raíces</h4>
+                    <p>Riesgo: Bajo | Retorno: 102% a 110% | Tiempo: 5-7 turnos</p>
+                    <div class="investment-cost">Mínimo: $300</div>
+                </div>
+                <div class="investment-option" onclick="chooseInvestment('crypto')">
+                    <h4>₿ Criptomonedas</h4>
+                    <p>Riesgo: Alto | Retorno: 60% a 140% | Tiempo: 2-3 turnos</p>
+                    <div class="investment-cost">Mínimo: $50</div>
+                </div>
+                <div class="investment-option" onclick="chooseInvestment('business')">
+                    <h4>🏪 Negocio Propio</h4>
+                    <p>Riesgo: Alto | Retorno: 85% a 125% | Tiempo: 4-6 turnos</p>
+                    <div class="investment-cost">Mínimo: $500</div>
+                </div>
+            </div>
+            <button onclick="closeInvestmentModal()" style="margin-top: 20px;" class="trivia-continue-btn">Salir sin invertir</button>
+        </div>
+    </div>
+
+    <div id="gameContainer" class="game-container hidden">
+        <!-- Logo OISS superior derecha -->
+        <img src="../assets/oiss.png" alt="OISS" style="position: fixed; top: 20px; right: 20px; height: 80px; width: auto; max-width: 320px; z-index: 1000; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));">
+        
+        <!-- Logo AECID inferior izquierda -->
+        <img src="../assets/españa.png" alt="AECID" style="position: fixed; bottom: 20px; left: 20px; height: 80px; width: auto; max-width: 280px; z-index: 1000; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));">
+        
+        <header class="text-center mb-4">
+            <h1 class="text-4xl md:text-5xl game-title">🎯 Decisiones de Vida</h1>
+            <p class="text-lg md:text-xl game-subtitle">V2.0: ¡Tu Destino, Tu Decisión!</p>
+            <p id="playerWelcome" class="text-lg font-semibold mt-2" style="color: #667eea;"></p>
+        </header>
+    
+        <div style="width: 100%; max-width: 1150px; margin: 0 auto 20px auto; padding: 0 10px;">
+            <progress id="progressBar" value="0" max="250" style="width: 100%; height: 20px;"></progress>
+        </div>
+    
+        <div class="game-layout">
+            <main class="game-main-column">
+                <div id="gameBoard" class="game-board-main">
+                    <div id="playerToken" class="player-token"></div>
+                </div>
+                <div class="path-legend">
+                    <div class="legend-item study-legend">📚 Senda del Saber</div>
+                    <div class="legend-item work-legend">💼 Ruta Laboral</div>
+                    <div class="legend-item leisure-legend">🌴 Travesía del Ocio</div>
+                    <div class="legend-item pension-legend">🏦 Aporte a Pensión</div>
+                    <div class="legend-item crisis-legend" style="background-color: #fecaca; border: 1px solid #ef4444;">⚡ Crisis</div>
+                    <div class="legend-item opportunity-legend" style="background-color: #fed7aa; border: 1px solid #f97316;">🎯 Oportunidades</div>
+                    <div class="legend-item investment-legend" style="background-color: #dbeafe; border: 1px solid #3b82f6;">📈 Inversiones</div>
+                </div>
+                <div id="messageLog" class="message-log-bottom"><p>🎯 Bienvenido a Caminos de Vida V2.3.</p></div>
+            </main>
+            <aside class="game-sidebar">
+                <div id="statsPanel" class="stats-panel">
+                    <div class="stats-grid">
+                        <div class="stat-item"><div id="playerAvatar" class="text-5xl">😐</div><div class="stat-label">AVATAR</div></div>
+                        <div class="stat-item"><div class="stat-label">💰 Dinero</div><div id="dineroStat" class="stat-value">0</div></div>
+                        <div class="stat-item"><div class="stat-label">❤️ Salud</div><div id="saludStat" class="stat-value">0</div></div>
+                        <div class="stat-item"><div class="stat-label">🎉 Ocio</div><div id="ocioStat" class="stat-value">0</div></div>
+                        <div class="stat-item"><div class="stat-label">🏦 Pensión</div><div id="pensionStat" class="stat-value">0</div></div>
+                        <div class="stat-item"><div class="stat-label">🧠 Conocimiento</div><div id="knowledgeStat" class="stat-value">0</div></div>
+                        <div class="stat-item"><div class="stat-label">💳 Crédito</div><div id="creditStat" class="stat-value">100</div></div>
+                        <div class="stat-item"><div class="stat-label">💸 Deuda</div><div id="debtStat" class="stat-value">0</div></div>
+                        <div class="stat-item"><div class="stat-label">📈 Inversiones</div><div id="investmentsStat" class="stat-value">0</div></div>
+                        <div class="stat-item"><div class="stat-label">📍 Posición</div><div id="currentPositionStat" class="stat-value">Inicio</div></div>
+                    </div>
+                    <div id="logrosContainer" class="flex gap-2 mt-4 justify-center"></div>
+                </div>
+                <div id="controls" class="controls">
+                </div>
+                <div class="dice-container">
+                    <div id="dice3d" class="dice3d">
+                        <div class="face one">1</div> <div class="face two">2</div> <div class="face three">3</div> <div class="face four">4</div> <div class="face five">5</div> <div class="face six">6</div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <div id="endScreen" class="end-screen hidden">
+        <div class="end-screen-content">
+            <h2 class="text-3xl font-bold text-green-600 mb-4">¡Felicidades, terminaste!</h2>
+            <p id="finalSummary" class="text-lg text-gray-700"></p>
+            <h3 class="text-xl font-bold mt-8 mb-4 text-purple-200">Línea de Tiempo de Decisiones:</h3>
+            <div id="timeline" class="text-sm"></div>
+            <button onclick="location.reload()" class="mt-6 bg-blue-500 text-white px-6 py-2 rounded shadow hover:bg-blue-600">Jugar de nuevo</button>
+        </div>
+    </div>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

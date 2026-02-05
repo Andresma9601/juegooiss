@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria - OISS</title>
+    <link rel="stylesheet" href="../css/parejas.css">
+</head>
+<body>
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="../assets/parejas.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+    </audio>
+
+    <audio id="flipSound" preload="auto">
+        <source src="../assets/flip.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="matchSound" preload="auto">
+        <source src="../assets/match.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="winSound" preload="auto">
+        <source src="../assets/win.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Logo OISS superior derecha -->
+    <img src="../assets/oiss.png" alt="OISS" style="position: fixed; top: 20px; right: 20px; height: 80px; width: auto; max-width: 320px; z-index: 1000; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));">
+    
+    <!-- Logo AECID superior izquierda -->
+    <img src="../assets/españa.png" alt="AECID" style="position: fixed; top: 20px; left: 20px; height: 80px; width: auto; max-width: 280px; z-index: 1000; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));">
+
+    <div class="container">
+        <header class="header">
+            <h1>Juego de Memoria</h1>
+            <p>OISS - Organización Iberoamericana de Seguridad Social</p>
+        </header>
+
+        <div class="top-controls">
+            <div class="game-stats">
+                <div class="stat-item stat-moves">
+                    <div class="stat-number" id="moves">0</div>
+                    <div class="stat-label">Movimientos</div>
+                </div>
+                <div class="stat-item stat-time">
+                    <div class="stat-number" id="time">00:00</div>
+                    <div class="stat-label">Tiempo</div>
+                </div>
+                <div class="stat-item stat-matches">
+                    <div class="stat-number" id="matches">0</div>
+                    <div class="stat-label">Parejas</div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <button id="musicToggle" class="btn btn-music">
+                    <span>🔊</span>
+                    Música
+                </button>
+                <button id="backToOfficeBtn" class="btn btn-secondary">
+                    <span>🏢</span>
+                    Volver a la Oficina OISS
+                </button>
+                <button id="resetBtn" class="btn btn-primary">
+                    <span>🔄</span>
+                    Nuevo Juego
+                </button>
+                <div class="difficulty-selector">
+                    <label>Dificultad:</label>
+                    <select id="difficulty">
+                        <option value="easy" selected>Fácil (4x4 - 8 parejas)</option>
+                        <option value="medium">Medio (5x5 - 12 parejas)</option>
+                        <option value="hard">Difícil (6x6 - 18 parejas)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-container" id="gameContainer">
+        </div>
+
+        <div id="winModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>🎉 ¡Felicitaciones!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Has completado el juego exitosamente</p>
+                    <div class="final-stats">
+                        <div class="final-stat">
+                            <strong>Tiempo:</strong> <span id="finalTime"></span>
+                        </div>
+                        <div class="final-stat">
+                            <strong>Movimientos:</strong> <span id="finalMoves"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="playAgainBtn" class="btn btn-success">Jugar de Nuevo</button>
+                    <button id="backToOfficeFromModalBtn" class="btn btn-secondary">Volver a la Oficina</button>
+                    <button id="closeModalBtn" class="btn btn-secondary">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/parejas.js"></script>
+</body>
+</html>

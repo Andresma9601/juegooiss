@@ -1,0 +1,1702 @@
+[
+  {
+    "pregunta": "¿Qué es la Seguridad Social?",
+    "opciones": [
+      "Una protección garantizada por el Estado para cubrir riesgos como enfermedad, vejez, desempleo, entre otros.",
+      "Un subsidio temporal que solo se da en casos de accidentes.",
+      "Un sistema de ahorro privado.",
+      "Una ONG que da ayuda a los pobres."
+    ],
+    "respuestaCorrecta": "Una protección garantizada por el Estado para cubrir riesgos como enfermedad, vejez, desempleo, entre otros.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Cuál es el principal objetivo de la Seguridad Social?",
+    "opciones": [
+      "Proteger a las personas ante situaciones que afecten su ingreso o su salud.",
+      "Recaudar impuestos para construir carreteras.",
+      "Facilitar la importación de medicamentos.",
+      "Promover la libre competencia entre hospitales."
+    ],
+    "respuestaCorrecta": "Proteger a las personas ante situaciones que afecten su ingreso o su salud.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Quiénes deben estar cubiertos por la Seguridad Social?",
+    "opciones": [
+      "Toda la población, especialmente trabajadores y sus familias.",
+      "Solo empleados públicos y militares.",
+      "Sólo los mayores de 65 años.",
+      "Exclusivamente los extranjeros residentes."
+    ],
+    "respuestaCorrecta": "Toda la población, especialmente trabajadores y sus familias.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué beneficios ofrece un sistema de Seguridad Social?",
+    "opciones": [
+      "Pensiones, servicios de salud, licencias por maternidad/paternidad, subsidios por desempleo.",
+      "Tarjetas de crédito, viajes y rifas para empleados públicos.",
+      "Acceso a clubes sociales y deportivos del Estado.",
+      "Becas universitarias en el extranjero."
+    ],
+    "respuestaCorrecta": "Pensiones, servicios de salud, licencias por maternidad/paternidad, subsidios por desempleo.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Quiénes aportan para asegurar el acceso a los servicios de la Seguridad Social?",
+    "opciones": [
+      "El trabajador, el empleador y el Estado.",
+      "El Estado lo asume todo.",
+      "Solo las empresas privadas.",
+      "Exclusivamente los ciudadanos extranjeros."
+    ],
+    "respuestaCorrecta": "El trabajador, el empleador y el Estado.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una contingencia en Seguridad Social?",
+    "opciones": [
+      "Un evento inesperado que afecta la capacidad de generar ingresos o la salud (ej. enfermedad, accidente, vejez).",
+      "Un día feriado en el calendario.",
+      "Un beneficio adicional por buen comportamiento.",
+      "Un tipo de impuesto sobre la propiedad."
+    ],
+    "respuestaCorrecta": "Un evento inesperado que afecta la capacidad de generar ingresos o la salud (ej. enfermedad, accidente, vejez).",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la afiliación a la Seguridad Social?",
+    "opciones": [
+      "El registro formal de una persona en el sistema para acceder a sus beneficios.",
+      "Un proceso para obtener la ciudadanía de otro país.",
+      "La suscripción a una revista de salud.",
+      "La inscripción a un gimnasio."
+    ],
+    "respuestaCorrecta": "El registro formal de una persona en el sistema para acceder a sus beneficios.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el Régimen Contributivo?",
+    "opciones": [
+      "Aquel en el que los beneficiarios realizan aportes económicos periódicos.",
+      "Un sistema de salud gratuito para todos sin importar sus ingresos.",
+      "Un tipo de seguro para vehículos.",
+      "Un programa de becas universitarias."
+    ],
+    "respuestaCorrecta": "Aquel en el que los beneficiarios realizan aportes económicos periódicos.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el Régimen Subsidiado?",
+    "opciones": [
+      "Destinado a personas sin capacidad de pago, cuyos aportes son financiados total o parcialmente por el Estado.",
+      "Un sistema de ahorro obligatorio para todos los ciudadanos.",
+      "Un beneficio exclusivo para empleados de grandes empresas.",
+      "Un seguro de viaje internacional."
+    ],
+    "respuestaCorrecta": "Destinado a personas sin capacidad de pago, cuyos aportes son financiados total o parcialmente por el Estado.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una EPS (Entidad Promotora de Salud) o similar?",
+    "opciones": [
+      "Entidad encargada de la afiliación y prestación de servicios de salud.",
+      "Una empresa de construcción de hospitales.",
+      "Un centro de investigación científica.",
+      "Una organización que promueve el turismo."
+    ],
+    "respuestaCorrecta": "Entidad encargada de la afiliación y prestación de servicios de salud.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la cobertura universal en salud?",
+    "opciones": [
+      "Que toda la población tenga acceso a servicios de salud de calidad sin sufrir dificultades financieras.",
+      "Un programa de ejercicios para todos los ciudadanos.",
+      "La disponibilidad de un médico en cada hogar.",
+      "Un subsidio para comprar carros de lujo."
+    ],
+    "respuestaCorrecta": "Que toda la población tenga acceso a servicios de salud de calidad sin sufrir dificultades financieras.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué significa \"solidaridad\" en la Seguridad Social?",
+    "opciones": [
+      "Que quienes tienen más ingresos o salud contribuyen para quienes tienen menos.",
+      "Que solo las personas ricas tienen acceso a beneficios.",
+      "Que el Estado no interviene en absoluto.",
+      "Que cada persona se costea todos sus propios riesgos."
+    ],
+    "respuestaCorrecta": "Que quienes tienen más ingresos o salud contribuyen para quienes tienen menos.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la prevención en salud pública?",
+    "opciones": [
+      "Medidas para evitar la aparición de enfermedades o reducir su impacto.",
+      "La curación de enfermedades graves únicamente.",
+      "Un plan para la construcción de más hospitales.",
+      "El estudio de enfermedades raras."
+    ],
+    "respuestaCorrecta": "Medidas para evitar la aparición de enfermedades o reducir su impacto.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la promoción de la salud?",
+    "opciones": [
+      "Estrategias para mejorar las condiciones de vida y los hábitos saludables de la población.",
+      "La publicidad de productos farmacéuticos.",
+      "La venta de servicios médicos a domicilio.",
+      "El patrocinio de eventos deportivos."
+    ],
+    "respuestaCorrecta": "Estrategias para mejorar las condiciones de vida y los hábitos saludables de la población.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué papel juega la inclusión en la Seguridad Social?",
+    "opciones": [
+      "Garantizar que nadie quede excluido de la protección social, especialmente grupos vulnerables.",
+      "Solo incluir a personas con altos ingresos.",
+      "Excluir a quienes no tienen un empleo formal.",
+      "Un programa para dar trabajo solo a jóvenes."
+    ],
+    "respuestaCorrecta": "Garantizar que nadie quede excluido de la protección social, especialmente grupos vulnerables.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Cuál es el papel del Estado en la Seguridad Social?",
+    "opciones": [
+      "Regular, garantizar y supervisar su funcionamiento. Igualmente, participar en la financiación del Sistema de Seguridad Social",
+      "Cobrar impuestos para invertir en bolsa.",
+      "Solo pagar los medicamentos para funcionarios.",
+      "No tiene participación directa."
+    ],
+    "respuestaCorrecta": "Regular, garantizar y supervisar su funcionamiento. Igualmente, participar en la financiación del Sistema de Seguridad Social",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué son los Sistemas de Protección Social Universal?",
+    "opciones": [
+      "Sistemas que garantizan una cobertura básica a toda la población, sin importar su condición laboral.",
+      "Servicios exclusivos para empleados públicos.",
+      "Planes privados que se venden en farmacias.",
+      "Beneficios que solo aplican en países con renta alta."
+    ],
+    "respuestaCorrecta": "Sistemas que garantizan una cobertura básica a toda la población, sin importar su condición laboral.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué riesgos protege la pensión por invalidez?",
+    "opciones": [
+      "La pérdida permanente de la capacidad de trabajar.",
+      "El robo de objetos personales.",
+      "La pérdida de documentos de identidad.",
+      "Una multa por faltar al trabajo."
+    ],
+    "respuestaCorrecta": "La pérdida permanente de la capacidad de trabajar.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué rol tienen las veedurías ciudadanas, las asociaciones de usuarios y los sindicatos en los Sistemas de Seguridad Social?",
+    "opciones": [
+      "Defender derechos laborales y promover mejoras en los sistemas.",
+      "Vender seguros de vida.",
+      "Administrar hospitales privados.",
+      "Organizar rifas y concursos para afiliados."
+    ],
+    "respuestaCorrecta": "Defender derechos laborales y promover mejoras en los sistemas.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Cuál es la tendencia actual en los países con respecto a la Seguridad Social?",
+    "opciones": [
+      "Promover sistemas sostenibles, equitativos e inclusivos.",
+      "Privatizar todos los hospitales.",
+      "Eliminar las pensiones no contributivas.",
+      "Disminuir la edad de jubilación a 40 años."
+    ],
+    "respuestaCorrecta": "Promover sistemas sostenibles, equitativos e inclusivos.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una pensión de vejez?",
+    "opciones": [
+      "Un ingreso regular que recibe una persona cuando cumple su edad de jubilación.",
+      "Un bono único que se entrega al cumplir 90 años.",
+      "Una herencia que da el Estado a los nietos.",
+      "Un préstamo para comprar vivienda en la vejez."
+    ],
+    "respuestaCorrecta": "Un ingreso regular que recibe una persona cuando cumple su edad de jubilación.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué edad se requiere generalmente para jubilarse en Iberoamérica?",
+    "opciones": [
+      "Entre 60 y 65 años, dependiendo del país y el género.",
+      "A los 40 años para todos.",
+      "Solo después de los 75 años.",
+      "No hay edad mínima, basta con trabajar un mes."
+    ],
+    "respuestaCorrecta": "Entre 60 y 65 años, dependiendo del país y el género.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es un fondo de pensiones?",
+    "opciones": [
+      "Una entidad (pública o privada) que administra y rentabiliza los aportes de los afiliados.",
+      "Un grupo de jubilados que forman una cooperativa.",
+      "Un subsidio para pagar universidades.",
+      "Una caja de ahorros para gastos médicos."
+    ],
+    "respuestaCorrecta": "Una entidad (pública o privada) que administra y rentabiliza los aportes de los afiliados.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué significa \"capitalización individual\"?",
+    "opciones": [
+      "Que cada persona ahorra en su cuenta para su propia pensión.",
+      "Que el Estado decide cuánto se recibe sin importar los aportes.",
+      "Que los fondos se comparten entre todos sin registro.",
+      "Que el empleador paga el 100% sin participación del trabajador."
+    ],
+    "respuestaCorrecta": "Que cada persona ahorra en su cuenta para su propia pensión.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el sistema de reparto?",
+    "opciones": [
+      "Un sistema en donde los aportes actuales financian las pensiones de los jubilados actuales.",
+      "Un plan donde todos reciben lo mismo sin importar su aporte.",
+      "Una modalidad exclusiva de bancos.",
+      "Un sistema que entrega subsidios para alimentos."
+    ],
+    "respuestaCorrecta": "Un sistema en donde los aportes actuales financian las pensiones de los jubilados actuales.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué pasa si no se alcanza el número mínimo de semanas cotizadas?",
+    "opciones": [
+      "En muchos países, se accede a una pensión reducida o a una devolución de aportes.",
+      "Se recibe automáticamente una pensión vitalicia.",
+      "El dinero se pierde y no se puede reclamar.",
+      "Se recibe un bono mensual hasta completar las semanas."
+    ],
+    "respuestaCorrecta": "En muchos países, se accede a una pensión reducida o a una devolución de aportes.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una pensión mínima?",
+    "opciones": [
+      "La cantidad mínima que garantiza el sistema a ciertos beneficiarios.",
+      "Un pago que solo se hace en diciembre.",
+      "El salario básico de los trabajadores activos.",
+      "El valor máximo que se puede recibir por jubilación."
+    ],
+    "respuestaCorrecta": "La cantidad mínima que garantiza el sistema a ciertos beneficiarios.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Quién administra los fondos de pensión en sistemas privados?",
+    "opciones": [
+      "Administradoras de fondos de pensiones (AFP o similares).",
+      "Las embajadas de cada país.",
+      "Las cámaras de comercio.",
+      "Los bancos centrales de América Latina."
+    ],
+    "respuestaCorrecta": "Administradoras de fondos de pensiones (AFP o similares).",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una pensión anticipada?",
+    "opciones": [
+      "La que se recibe antes de la edad legal, si se cumplen ciertos requisitos.",
+      "Un pago adicional a la pensión.",
+      "Un tipo de subsidio para personas sin empleo.",
+      "Una pensión que se entrega a menores de edad."
+    ],
+    "respuestaCorrecta": "La que se recibe antes de la edad legal, si se cumplen ciertos requisitos.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una pensión por invalidez?",
+    "opciones": [
+      "Una pensión otorgada por pérdida de la capacidad laboral.",
+      "Un pago que recibe una persona con deuda bancaria.",
+      "Un seguro de desempleo para estudiantes.",
+      "Un premio por años de servicio."
+    ],
+    "respuestaCorrecta": "Una pensión otorgada por pérdida de la capacidad laboral.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una pensión de sobrevivientes?",
+    "opciones": [
+      "Una pensión para familiares del afiliado fallecido.",
+      "Un premio de lotería para ancianos.",
+      "Un subsidio alimenticio para menores.",
+      "Una pensión exclusiva para militares."
+    ],
+    "respuestaCorrecta": "Una pensión para familiares del afiliado fallecido.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué ocurre con los aportes si el afiliado muere sin beneficiarios?",
+    "opciones": [
+      "En algunos sistemas, se heredan; en otros, pasan al fondo común.",
+      "Se pagan en efectivo a los vecinos.",
+      "Se entregan al municipio donde vivía.",
+      "Se utilizan para rifas de salud."
+    ],
+    "respuestaCorrecta": "En algunos sistemas, se heredan; en otros, pasan al fondo común.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la \"densidad de cotización\"?",
+    "opciones": [
+      "La relación entre semanas cotizadas y tiempo total de vida laboral.",
+      "El número de hijos que tiene el trabajador.",
+      "La edad al momento de la primera afiliación.",
+      "El número de empleos que tuvo en su vida."
+    ],
+    "respuestaCorrecta": "La relación entre semanas cotizadas y tiempo total de vida laboral.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el ahorro previsional voluntario?",
+    "opciones": [
+      "Un ahorro adicional al obligatorio para mejorar la pensión.",
+      "Una donación que se hace al Estado.",
+      "Un fondo para pagar estudios de los nietos.",
+      "Un descuento en compras en línea."
+    ],
+    "respuestaCorrecta": "Un ahorro adicional al obligatorio para mejorar la pensión.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Cuál es un riesgo de no cotizar a pensión?",
+    "opciones": [
+      "No tener ingresos para la vejez.",
+      "Perder el pasaporte.",
+      "No poder votar en elecciones.",
+      "Pagar más impuestos al jubilarse."
+    ],
+    "respuestaCorrecta": "No tener ingresos para la vejez.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué papel juega la esperanza de vida al nacer en las pensiones?",
+    "opciones": [
+      "Afecta el monto y la duración de las pensiones.",
+      "No tiene ningún efecto, todo es fijo.",
+      "Solo aplica en Europa, no en América Latina.",
+      "Solo se considera en personas menores de 50 años."
+    ],
+    "respuestaCorrecta": "Afecta el monto y la duración de las pensiones.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una pensión contributiva?",
+    "opciones": [
+      "Aquella que depende de los aportes hechos por las personas y las empresas al sistema.",
+      "Una pensión que se hereda sin trabajar.",
+      "Un pago mensual a hijos de pensionados.",
+      "Un tipo de beca para jubilados."
+    ],
+    "respuestaCorrecta": "Aquella que depende de los aportes hechos por las personas y las empresas al sistema.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una pensión no contributiva?",
+    "opciones": [
+      "Otorgada por el Estado sin necesidad de cotizaciones previas.",
+      "Una bonificación para trabajadores activos.",
+      "Un tipo de préstamo para pensionados.",
+      "Una renta que se obtiene por invertir en bolsa."
+    ],
+    "respuestaCorrecta": "Otorgada por el Estado sin necesidad de cotizaciones previas.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la portabilidad de pensiones?",
+    "opciones": [
+      "La posibilidad de sumar cotizaciones hechas en distintos países.",
+      "Cambiar de trabajo sin perder días de vacaciones.",
+      "Hacer llamadas internacionales sin costo.",
+      "Recibir pensión solo en dólares."
+    ],
+    "respuestaCorrecta": "La posibilidad de sumar cotizaciones hechas en distintos países.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué organización promueve la portabilidad en Iberoamérica?",
+    "opciones": [
+      "La Conferencia Interamericana de Seguridad Social (CISS).",
+      "El Comité Olímpico Internacional.",
+      "La OEA de los Deportes.",
+      "El Fondo Monetario de Trabajo."
+    ],
+    "respuestaCorrecta": "La Conferencia Interamericana de Seguridad Social (CISS).",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una tabla de mortalidad?",
+    "opciones": [
+      "Un cálculo que estima cuántos años vivirá una persona al jubilarse.",
+      "Una lista de medicamentos prohibidos.",
+      "Una tabla de impuestos sobre la muerte.",
+      "Una gráfica con tipos de enfermedades mortales."
+    ],
+    "respuestaCorrecta": "Un cálculo que estima cuántos años vivirá una persona al jubilarse.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la jubilación parcial?",
+    "opciones": [
+      "Cuando se trabaja con menos carga laboral mientras se empieza a recibir pensión.",
+      "Cuando solo se recibe media pensión por castigo.",
+      "Cuando se cotiza cada dos meses.",
+      "Cuando se paga doble por trabajar más."
+    ],
+    "respuestaCorrecta": "Cuando se trabaja con menos carga laboral mientras se empieza a recibir pensión.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Cómo afectan las lagunas laborales a la pensión?",
+    "opciones": [
+      "Disminuyen el monto final o impiden acceder al beneficio.",
+      "Aumentan automáticamente la pensión.",
+      "Dan acceso a subsidios en el exterior.",
+      "No afectan si la persona es profesional."
+    ],
+    "respuestaCorrecta": "Disminuyen el monto final o impiden acceder al beneficio.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es un bono pensional?",
+    "opciones": [
+      "Reconocimiento de aportes hechos antes del actual sistema.",
+      "Un premio al mejor pensionado del año.",
+      "Un vale de supermercado para jubilados.",
+      "Una ayuda de emergencia por inflación."
+    ],
+    "respuestaCorrecta": "Reconocimiento de aportes hechos antes del actual sistema.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Por qué es importante planificar la jubilación desde joven?",
+    "opciones": [
+      "Para garantizar una pensión suficiente y digna.",
+      "Para evitar trabajar durante la juventud.",
+      "Para cobrar doble pensión antes de los 30 años.",
+      "Porque es obligatorio antes de tener hijos."
+    ],
+    "respuestaCorrecta": "Para garantizar una pensión suficiente y digna.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el aseguramiento en salud?",
+    "opciones": [
+      "Un mecanismo que garantiza acceso a la atención médica.",
+      "Un programa para promocionar seguros de vehículos.",
+      "Un trámite para registrar medicamentos.",
+      "Un subsidio para comprar vitaminas."
+    ],
+    "respuestaCorrecta": "Un mecanismo que garantiza acceso a la atención médica.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es un plan obligatorio de salud?",
+    "opciones": [
+      "El conjunto de servicios cubiertos por el sistema de salud.",
+      "Una guía de alimentos saludables.",
+      "Un contrato entre EPS y farmacias.",
+      "Una tarjeta de descuentos para gimnasios."
+    ],
+    "respuestaCorrecta": "El conjunto de servicios cubiertos por el sistema de salud.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre atención de primer nivel y atención especializada?",
+    "opciones": [
+      "La atención de primer nivel es la atención de salud básica y de menor complejidad: La especializada trata casos más complejos.",
+      "La primaria se da en el hospital y la especializada en casa.",
+      "La atención primaria es para enfermedades mentales.",
+      "No hay diferencia, son lo mismo."
+    ],
+    "respuestaCorrecta": "La atención de primer nivel es la atención de salud básica y de menor complejidad: La especializada trata casos más complejos.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es la cotización en salud?",
+    "opciones": [
+      "El aporte mensual que se hace al sistema de salud.",
+      "Un presupuesto para abrir un hospital.",
+      "El precio de una cirugía plástica.",
+      "Un pago para clases de primeros auxilios."
+    ],
+    "respuestaCorrecta": "El aporte mensual que se hace al sistema de salud.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es la red pública hospitalaria?",
+    "opciones": [
+      "Los hospitales y centros médicos del Estado.",
+      "Clínicas privadas afiliadas a bancos.",
+      "Una lista de médicos que trabajan en redes sociales.",
+      "Un conjunto de páginas web de salud."
+    ],
+    "respuestaCorrecta": "Los hospitales y centros médicos del Estado.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué riesgo cubre la salud ocupacional?",
+    "opciones": [
+      "Enfermedades y accidentes laborales.",
+      "Riesgos de perder vacaciones.",
+      "Riesgos financieros de la empresa.",
+      "Riesgos de trabajar en casa."
+    ],
+    "respuestaCorrecta": "Enfermedades y accidentes laborales.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es un seguro médico complementario?",
+    "opciones": [
+      "Un seguro adicional para cubrir servicios no incluidos en el sistema público.",
+      "Un seguro obligatorio para todos.",
+      "Un servicio exclusivo de las embajadas.",
+      "Un plan para pagar viajes de trabajo."
+    ],
+    "respuestaCorrecta": "Un seguro adicional para cubrir servicios no incluidos en el sistema público.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es la telemedicina?",
+    "opciones": [
+      "Atención médica a distancia mediante tecnologías.",
+      "Medicina aplicada por televisión.",
+      "Un tipo de tratamiento con música.",
+      "Una especialización universitaria para actores."
+    ],
+    "respuestaCorrecta": "Atención médica a distancia mediante tecnologías.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es una Aseguradora de Salud?",
+    "opciones": [
+      "Una entidad que administra la afiliación y prestación de servicios médicos.",
+      "Una empresa de transporte escolar.",
+      "Un tipo de universidad pública.",
+      "Una tienda de productos farmacéuticos."
+    ],
+    "respuestaCorrecta": "Una entidad que administra la afiliación y prestación de servicios médicos.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué cubre la licencia de maternidad?",
+    "opciones": [
+      "El salario de la madre durante un tiempo determinado luego del parto.",
+      "Un subsidio para pañales.",
+      "El costo del jardín infantil.",
+      "El pasaje aéreo para visitar a los abuelos."
+    ],
+    "respuestaCorrecta": "El salario de la madre durante un tiempo determinado luego del parto.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es una enfermedad laboral?",
+    "opciones": [
+      "Aquella causada directamente por el trabajo.",
+      "Cualquier gripe común.",
+      "Una enfermedad por usar transporte público.",
+      "Una condición genética hereditaria."
+    ],
+    "respuestaCorrecta": "Aquella causada directamente por el trabajo.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es un accidente de trabajo?",
+    "opciones": [
+      "Un suceso inesperado que ocurre durante la actividad laboral.",
+      "Cualquier accidente fuera del horario laboral.",
+      "Caídas en la casa durante el fin de semana.",
+      "Un accidente de tránsito en vacaciones."
+    ],
+    "respuestaCorrecta": "Un suceso inesperado que ocurre durante la actividad laboral.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué cubre el sistema de salud frente al COVID-19?",
+    "opciones": [
+      "Atención médica, hospitalización y vacunación, en la mayoría de países.",
+      "Solo exámenes estéticos.",
+      "Tratamiento obligatorio en el extranjero.",
+      "Multas para quienes se contagian."
+    ],
+    "respuestaCorrecta": "Atención médica, hospitalización y vacunación, en la mayoría de países.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué papel tiene la prevención en salud?",
+    "opciones": [
+      "Evitar enfermedades y complicaciones en las personas, y reducir costos al sistema.",
+      "Solo detectar enfermedades en etapa terminal.",
+      "Justificar el cobro de impuestos.",
+      "No tiene función dentro del sistema público."
+    ],
+    "respuestaCorrecta": "Evitar enfermedades y complicaciones en las personas, y reducir costos al sistema.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es un carné de salud?",
+    "opciones": [
+      "Documento que prueba la afiliación al sistema. No en todos los países es obligatorio.",
+      "Una tarjeta de puntos en farmacias.",
+      "Un permiso para consumir licor.",
+      "Un comprobante de inscripción universitaria."
+    ],
+    "respuestaCorrecta": "Documento que prueba la afiliación al sistema. No en todos los países es obligatorio.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué son los copagos?",
+    "opciones": [
+      "Pagos adicionales que el afiliado debe hacer por ciertos servicios.",
+      "Bonificaciones que se reciben por ir al médico.",
+      "Multas por no afiliarse.",
+      "Devoluciones mensuales del sistema de salud."
+    ],
+    "respuestaCorrecta": "Pagos adicionales que el afiliado debe hacer por ciertos servicios.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre régimen contributivo y subsidiado en salud?",
+    "opciones": [
+      "El primero lo pagan empleador/trabajador; el segundo lo financia el Estado.",
+      "El subsidiado da atención solo en el extranjero.",
+      "El contributivo es para menores de edad.",
+      "No existe diferencia, son sinónimos."
+    ],
+    "respuestaCorrecta": "El primero lo pagan empleador/trabajador; el segundo lo financia el Estado.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Quiénes pueden afiliarse como beneficiarios en salud?",
+    "opciones": [
+      "Cónyuge, hijos menores, padres dependientes, según país.",
+      "Solo personas mayores de 65 años.",
+      "Solo los vecinos cercanos.",
+      "Solo quienes trabajan en el sistema de salud."
+    ],
+    "respuestaCorrecta": "Cónyuge, hijos menores, padres dependientes, según país.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es una emergencia médica?",
+    "opciones": [
+      "Una condición de salud que requiere atención inmediata.",
+      "Cualquier dolor leve de cabeza.",
+      "Una enfermedad que se cura en casa.",
+      "Un procedimiento dental estético."
+    ],
+    "respuestaCorrecta": "Una condición de salud que requiere atención inmediata.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Por qué es importante el acceso universal a la salud?",
+    "opciones": [
+      "Porque garantiza equidad y bienestar para toda la población.",
+      "Para vender más medicinas.",
+      "Para premiar a los que trabajan en el gobierno.",
+      "Porque obliga a todos a tener el mismo médico."
+    ],
+    "respuestaCorrecta": "Porque garantiza equidad y bienestar para toda la población.",
+    "mensajeCorrecto": "¡Excelente! Cuidas tu salud con sabiduría.",
+    "mensajeIncorrecto": "Incorrecto. Es importante informarse sobre temas de salud.",
+    "efectoDinero": 30,
+    "efectoSalud": 15,
+    "efectoOcio": 0,
+    "efectoConocimiento": 0,
+    "categoria": "Salud"
+  },
+  {
+    "pregunta": "¿Qué es la formalidad laboral?",
+    "opciones": [
+      "Cuando un trabajo está debidamente contratado y el empleado cuenta con derechos legales y Seguridad Social.",
+      "Cuando se trabaja sin contrato, pero con uniforme.",
+      "Cuando se trabaja por horas sin declarar ingresos.",
+      "Cuando se trabaja desde casa sin permiso."
+    ],
+    "respuestaCorrecta": "Cuando un trabajo está debidamente contratado y el empleado cuenta con derechos legales y Seguridad Social.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Por qué es importante tener contrato de trabajo?",
+    "opciones": [
+      "Garantiza acceso a seguridad social y estabilidad.",
+      "Solo sirve para pedir préstamos.",
+      "Porque evita tener que pagar impuestos.",
+      "No es necesario si el trabajo es temporal."
+    ],
+    "respuestaCorrecta": "Garantiza acceso a seguridad social y estabilidad.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué derechos tiene un trabajador formal?",
+    "opciones": [
+      "Salario, vacaciones, salud, pensión, entre otros.",
+      "Solo acceso a rifas y sorteos.",
+      "Un premio anual por asistir a reuniones.",
+      "Capacidad de trabajar sin descansos."
+    ],
+    "respuestaCorrecta": "Salario, vacaciones, salud, pensión, entre otros.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el salario mínimo?",
+    "opciones": [
+      "El ingreso mínimo legal que debe recibir un trabajador.",
+      "Un bono que se da por cumplir metas.",
+      "Una ayuda que solo dan ONGs.",
+      "Un ahorro que se deposita sin autorización."
+    ],
+    "respuestaCorrecta": "El ingreso mínimo legal que debe recibir un trabajador.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es un contrato a término indefinido?",
+    "opciones": [
+      "Un acuerdo laboral sin fecha de finalización.",
+      "Un contrato que solo dura 15 días.",
+      "Un contrato oral sin respaldo legal.",
+      "Un contrato con horario de 24 horas diarias."
+    ],
+    "respuestaCorrecta": "Un acuerdo laboral sin fecha de finalización.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la informalidad laboral?",
+    "opciones": [
+      "Trabajo sin contrato ni acceso a protección social.",
+      "Trabajar en oficinas con ropa informal.",
+      "Ser voluntario en eventos deportivos.",
+      "Ser socio de una empresa grande."
+    ],
+    "respuestaCorrecta": "Trabajo sin contrato ni acceso a protección social.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la educación financiera?",
+    "opciones": [
+      "El conocimiento y habilidades para tomar decisiones económicas acertadas.",
+      "Aprender a hacer matemáticas complejas.",
+      "Solo saber usar una tarjeta de crédito.",
+      "Conocer el nombre de todos los bancos del país."
+    ],
+    "respuestaCorrecta": "El conocimiento y habilidades para tomar decisiones económicas acertadas.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el ahorro?",
+    "opciones": [
+      "La parte del ingreso que no se gasta y se guarda para el futuro.",
+      "Una multa por no consumir.",
+      "Un tipo de pago con tarjeta.",
+      "Un impuesto que cobra el banco."
+    ],
+    "respuestaCorrecta": "La parte del ingreso que no se gasta y se guarda para el futuro.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Por qué es importante ahorrar?",
+    "opciones": [
+      "Para enfrentar imprevistos y planear metas como la jubilación.",
+      "Para evitar que el banco cierre la cuenta.",
+      "Para comprar ropa todos los meses.",
+      "Para no pagar impuestos."
+    ],
+    "respuestaCorrecta": "Para enfrentar imprevistos y planear metas como la jubilación.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el interés compuesto?",
+    "opciones": [
+      "Interés que se gana sobre intereses ya acumulados.",
+      "Una tarifa por usar teléfono en el extranjero.",
+      "Un bono que entrega el gobierno a los bancos.",
+      "Un porcentaje de descuento por pronto pago."
+    ],
+    "respuestaCorrecta": "Interés que se gana sobre intereses ya acumulados.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué son las finanzas personales?",
+    "opciones": [
+      "La administración del dinero individual o familiar.",
+      "El estudio de contabilidad empresarial.",
+      "Una aplicación para jugar con dinero ficticio.",
+      "Un sistema usado solo por empresas grandes."
+    ],
+    "respuestaCorrecta": "La administración del dinero individual o familiar.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una cuenta de ahorro previsional?",
+    "opciones": [
+      "Una cuenta destinada a guardar dinero para la vejez.",
+      "Una cuenta exclusiva para pagar multas.",
+      "Un fondo que se usa solo para fiestas familiares.",
+      "Un servicio bancario para adolescentes."
+    ],
+    "respuestaCorrecta": "Una cuenta destinada a guardar dinero para la vejez.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el endeudamiento responsable?",
+    "opciones": [
+      "Usar crédito de forma planificada y sin sobrepasar la capacidad de pago.",
+      "Pedir préstamos para viajar todos los meses.",
+      "Usar varias tarjetas sin control.",
+      "Evitar pagar las deudas hasta que se olviden."
+    ],
+    "respuestaCorrecta": "Usar crédito de forma planificada y sin sobrepasar la capacidad de pago.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el fondo de emergencia?",
+    "opciones": [
+      "Un ahorro reservado para situaciones imprevistas.",
+      "Un préstamo que se solicita en vacaciones.",
+      "Un subsidio para cumpleaños.",
+      "Un bono por estudiar medicina."
+    ],
+    "respuestaCorrecta": "Un ahorro reservado para situaciones imprevistas.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la pensión voluntaria?",
+    "opciones": [
+      "Ahorros adicionales que se hacen por voluntad propia para la vejez.",
+      "Un fondo para estudiar inglés.",
+      "Un bono anual del Estado.",
+      "Un seguro contra lluvias intensas."
+    ],
+    "respuestaCorrecta": "Ahorros adicionales que se hacen por voluntad propia para la vejez.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es un fondo de pensiones?",
+    "opciones": [
+      "Institución que administra el ahorro para la jubilación.",
+      "Banco que presta solo a personas mayores.",
+      "Caja de ahorro para vacaciones.",
+      "Fondo para fiestas de fin de año."
+    ],
+    "respuestaCorrecta": "Institución que administra el ahorro para la jubilación.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué son los aportes obligatorios a pensión?",
+    "opciones": [
+      "Contribuciones mensuales requeridas por ley para financiar la pensión.",
+      "Donaciones a fundaciones de ancianos.",
+      "Aportes que solo hacen los médicos.",
+      "Multas por no jubilarse."
+    ],
+    "respuestaCorrecta": "Contribuciones mensuales requeridas por ley para financiar la pensión.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la edad de jubilación legal?",
+    "opciones": [
+      "Edad establecida por ley para acceder a pensión.",
+      "Edad mínima para recibir subsidios escolares.",
+      "Edad obligatoria para dejar de estudiar.",
+      "Edad para casarse sin permiso."
+    ],
+    "respuestaCorrecta": "Edad establecida por ley para acceder a pensión.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el retiro programado?",
+    "opciones": [
+      "Modalidad de pensión donde se retiran fondos periódicamente según expectativa de vida.",
+      "Una beca para jóvenes deportistas.",
+      "Una forma de pedir vacaciones anticipadas.",
+      "Un bono para mudarse de ciudad."
+    ],
+    "respuestaCorrecta": "Modalidad de pensión donde se retiran fondos periódicamente según expectativa de vida.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre pensión de vejez y pensión de invalidez?",
+    "opciones": [
+      "La de vejez es por edad; la de invalidez por pérdida de capacidad laboral.",
+      "La de vejez es más costosa.",
+      "La de invalidez solo se da a menores de edad.",
+      "No hay diferencia, son lo mismo."
+    ],
+    "respuestaCorrecta": "La de vejez es por edad; la de invalidez por pérdida de capacidad laboral.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué pasa si una persona nunca cotizó para pensión?",
+    "opciones": [
+      "No puede acceder a una pensión contributiva, salvo programas asistenciales del Estado.",
+      "Recibe doble pensión por parte del gobierno.",
+      "Le descuentan dinero de sus hijos.",
+      "Hereda automáticamente la pensión de un vecino."
+    ],
+    "respuestaCorrecta": "No puede acceder a una pensión contributiva, salvo programas asistenciales del Estado.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es un bono pensional?",
+    "opciones": [
+      "Reconocimiento de aportes anteriores al nuevo sistema de pensiones.",
+      "Bono que se regala en cumpleaños.",
+      "Premio por trabajar menos de un año.",
+      "Subvención para comprar ropa laboral."
+    ],
+    "respuestaCorrecta": "Reconocimiento de aportes anteriores al nuevo sistema de pensiones.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una pensión anticipada?",
+    "opciones": [
+      "Jubilación antes de la edad legal, cumpliendo requisitos específicos.",
+      "Subsidio para estudiantes.",
+      "Pensión para quien nunca trabajó.",
+      "Dinero otorgado solo a políticos."
+    ],
+    "respuestaCorrecta": "Jubilación antes de la edad legal, cumpliendo requisitos específicos.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es un seguro de desempleo?",
+    "opciones": [
+      "Beneficio económico temporal para personas que pierden su empleo.",
+      "Seguro contra incendios en empresas.",
+      "Servicio de transporte gratuito para trabajadores.",
+      "Vacuna obligatoria para empleados."
+    ],
+    "respuestaCorrecta": "Beneficio económico temporal para personas que pierden su empleo.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué se entiende por inclusión financiera?",
+    "opciones": [
+      "Acceso de todas las personas a productos y servicios financieros adecuados.",
+      "Exclusión de personas sin ingresos altos.",
+      "Uso de monedas extranjeras para ahorrar.",
+      "Prohibición de usar efectivo."
+    ],
+    "respuestaCorrecta": "Acceso de todas las personas a productos y servicios financieros adecuados.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es el historial crediticio?",
+    "opciones": [
+      "Registro del comportamiento financiero de una persona.",
+      "Lista de películas sobre economía.",
+      "Certificado de estudios universitarios.",
+      "Documento que se usa solo para pasaportes."
+    ],
+    "respuestaCorrecta": "Registro del comportamiento financiero de una persona.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una pensión solidaria o no contributiva?",
+    "opciones": [
+      "Apoyo económico del Estado o de quienes contribuyen al Sistema, para personas mayores sin cotización previa suficiente.",
+      "Aporte voluntario a fundaciones religiosas.",
+      "Subsidio para estudiar en el extranjero.",
+      "Reembolso de gastos deportivos."
+    ],
+    "respuestaCorrecta": "Apoyo económico del Estado o de quienes contribuyen al Sistema, para personas mayores sin cotización previa suficiente.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es un microcrédito?",
+    "opciones": [
+      "Préstamo de bajo monto para emprendedores o pequeños negocios.",
+      "Tarjeta de crédito para niños.",
+      "Pago en monedas pequeñas.",
+      "Descuento en compras por volumen."
+    ],
+    "respuestaCorrecta": "Préstamo de bajo monto para emprendedores o pequeños negocios.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una entidad financiera?",
+    "opciones": [
+      "Institución que maneja productos como créditos, cuentas y ahorros.",
+      "Empresa que vende computadores.",
+      "Grupo de abogados públicos.",
+      "Agencia de viajes del gobierno."
+    ],
+    "respuestaCorrecta": "Institución que maneja productos como créditos, cuentas y ahorros.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la bancarización?",
+    "opciones": [
+      "Incorporación de personas al sistema financiero formal.",
+      "Proceso para abrir una tienda en un banco.",
+      "Cambio de moneda a billetes antiguos.",
+      "Requisito para acceder a becas deportivas."
+    ],
+    "respuestaCorrecta": "Incorporación de personas al sistema financiero formal.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es una tarjeta de débito?",
+    "opciones": [
+      "Medio de pago vinculado directamente a una cuenta de ahorros o corriente.",
+      "Bono para jugar videojuegos.",
+      "Licencia para conducir taxis.",
+      "Llave electrónica para entrar al banco."
+    ],
+    "respuestaCorrecta": "Medio de pago vinculado directamente a una cuenta de ahorros o corriente.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la tasa de interés?",
+    "opciones": [
+      "Costo del dinero prestado o ganancia del dinero ahorrado.",
+      "Precio fijo de los productos en oferta.",
+      "Tasa de crecimiento muscular.",
+      "Cuota mensual de un gimnasio."
+    ],
+    "respuestaCorrecta": "Costo del dinero prestado o ganancia del dinero ahorrado.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es un presupuesto personal?",
+    "opciones": [
+      "Plan de ingresos y gastos para organizar las finanzas.",
+      "Recibo de compras en el supermercado.",
+      "Registro de viajes en vacaciones.",
+      "Tarjeta para pagar impuestos."
+    ],
+    "respuestaCorrecta": "Plan de ingresos y gastos para organizar las finanzas.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Qué es la seguridad económica en la vejez?",
+    "opciones": [
+      "Tener ingresos y protección suficientes para vivir con dignidad en la tercera edad.",
+      "Viajar gratis en avión cada mes.",
+      "Acceso gratuito a ropa y electrodomésticos.",
+      "Estar exento de toda responsabilidad financiera."
+    ],
+    "respuestaCorrecta": "Tener ingresos y protección suficientes para vivir con dignidad en la tercera edad.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  },
+  {
+    "pregunta": "¿Por qué es importante la previsión social?",
+    "opciones": [
+      "Permite prepararse para riesgos como enfermedad, vejez o desempleo.",
+      "Solo sirve para obtener certificados.",
+      "Es un requisito para jugar en loterías.",
+      "Solo aplica a deportistas de alto rendimiento."
+    ],
+    "respuestaCorrecta": "Permite prepararse para riesgos como enfermedad, vejez o desempleo.",
+    "mensajeCorrecto": "¡Bien hecho! Tu conocimiento sobre la seguridad social te trae beneficios.",
+    "mensajeIncorrecto": "No fue la respuesta correcta. Repasa tus conocimientos.",
+    "efectoDinero": 30,
+    "efectoSalud": 0,
+    "efectoOcio": 0,
+    "efectoConocimiento": 10,
+    "categoria": "Conocimiento"
+  }
+]

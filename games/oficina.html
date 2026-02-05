@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina de la OISS</title>
+    <link rel="stylesheet" href="../css/trivia3d.css">
+</head>
+<body>
+    <audio id="officeMusic" loop preload="auto">
+        <source src="../assets/oficina.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+    </audio>
+
+    <div id="mundo3D">
+        <div id="canvas-container"></div>
+        
+        <div id="ui-overlay">
+            <div class="office-header">
+                <h2>🏢 Oficina de la OISS</h2>
+                <div class="header-buttons">
+                    <button id="toggleInstructions" class="btn-toggle-instructions" onclick="toggleInstructionsPanel()">
+                        <span>✖️</span>
+                    </button>
+                    <button id="musicToggle" class="btn-music-3d">
+                        <span>🔊</span>
+                    </button>
+                </div>
+            </div>
+            <p><strong>🎯 Misión:</strong> Explorar la oficina y acceder a las actividades</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="mainProgress"></div>
+            </div>
+            <div id="instructionsPanel" class="controls-instructions">
+                <h4>🎮 Controles de Navegación:</h4>
+                <p><strong>W:</strong> Avanzar hacia adelante</p>
+                <p><strong>A:</strong> Moverse hacia la izquierda</p>
+                <p><strong>S:</strong> Retroceder hacia atrás</p>
+                <p><strong>D:</strong> Moverse hacia la derecha</p>
+                <p><strong>🖱️ Mouse:</strong> Mirar alrededor (mantén presionado y arrastra)</p>
+                <p><strong>⚡ E:</strong> Interactuar con objetos cercanos</p>
+                <p><strong>💃 Espacio:</strong> Bailar (¡solo por diversión!)</p>
+                <p class="tip">💡 <em>Acércate a los letreros de los juegos y presiona E para jugar</em></p>
+            </div>
+            <div class="exit-button-container">
+                <button onclick="window.location.href='inicio.html'" class="btn-exit-office">
+                    🚪 Volver al Inicio
+                </button>
+            </div>
+        </div>
+        
+        <div id="interaction-prompt">
+            Presiona E para interactuar
+        </div>
+        
+        <!-- Logo OISS superior derecha en la oficina -->
+        <img src="../assets/oiss.png" alt="OISS" class="office-oiss-img">
+        
+        <!-- Logo AECID inferior izquierda en la oficina -->
+        <img src="../assets/españa.png" alt="AECID" class="office-aecid-img">
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" onload="console.log('✅ Three.js cargado')"></script>
+    
+    <script>
+        function waitForThreeJS() {
+            if (typeof THREE !== 'undefined') {
+                console.log('✅ Three.js confirmado, cargando juego...');
+                const script = document.createElement('script');
+                script.src = '../js/trivia3d.js';
+                script.onload = () => {
+                    console.log('✅ Juego cargado');
+                    // Inicializar directamente la oficina 3D
+                    if (typeof iniciarJuego === 'function') {
+                        iniciarJuego();
+                    }
+                };
+                script.onerror = () => console.error('❌ Error cargando trivia3d.js');
+                document.head.appendChild(script);
+            } else {
+                console.log('⏳ Esperando Three.js...');
+                setTimeout(waitForThreeJS, 100);
+            }
+        }
+        
+        waitForThreeJS();
+    </script>
+</body>
+</html>

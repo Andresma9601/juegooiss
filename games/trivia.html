@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/trivia.css">
+</head>
+<body>
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="../assets/trivia.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+    </audio>
+
+    <audio id="correctSound" preload="auto">
+        <source src="../assets/correct.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="wrongSound" preload="auto">
+        <source src="../assets/wrong.mp3" type="audio/mpeg">
+    </audio>
+
+    <video id="backgroundVideo" autoplay loop muted class="background-video">
+        <source src="../assets/3.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <!-- Logo OISS superior derecha -->
+    <img src="../assets/oiss.png" alt="OISS" style="position: fixed; top: 20px; right: 20px; height: 80px; width: auto; max-width: 320px; z-index: 10000; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));">
+    
+    <!-- Logo AECID inferior izquierda -->
+    <img src="../assets/españa.png" alt="AECID" style="position: fixed; bottom: 20px; left: 20px; height: 80px; width: auto; max-width: 280px; z-index: 10000; object-fit: contain; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));">
+
+    <button class="btn-volver-oficina" onclick="window.location.href='oficina.html'">
+        🏢 Volver a la Oficina
+    </button>
+
+    <div id="trainingScreen">
+        <div id="trainingContent">
+            <div class="trivia-header">
+                <h2>🧠 Modo Trivia</h2>
+                <button id="musicToggle" class="btn-music">
+                    <span>🔊</span>
+                </button>
+            </div>
+            
+            <div id="trainingStatsPanel" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; margin-bottom: 30px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; text-align: center;">
+                    <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: #60a5fa;">
+                            <span id="totalAnsweredStat">0</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: #e2e8f0;">Total Respondidas</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: #4ade80;">
+                            <span id="correctStat">0</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: #e2e8f0;">Correctas</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: #f87171;">
+                            <span id="incorrectStat">0</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: #e2e8f0;">Incorrectas</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: #facc15;">
+                            <span id="accuracyStat">0%</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: #e2e8f0;">Precisión</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: #a78bfa;">
+                            <span id="streakStat">0</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: #e2e8f0;">Racha Actual</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: bold; color: #fbbf24;">
+                            <span id="bestStreakStat">0</span>
+                        </div>
+                        <div style="font-size: 0.9rem; color: #e2e8f0;">Mejor Racha</div>
+                    </div>
+                </div>
+            </div>
+
+            <p id="trainingQuestion" class="text-white text-xl mb-6 leading-relaxed"></p>
+            
+            <div id="trainingOptions" class="grid grid-cols-1 gap-4 mt-6"></div>
+            
+            <div id="trainingResult" class="hidden mt-6 p-4 rounded-lg"></div>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 30px;">
+                <button onclick="mostrarTriviaAleatoria()" class="training-button">
+                    ➡️ Siguiente Trivia
+                </button>
+                <button onclick="reiniciarEstadisticasTrivia()" class="training-button bg-yellow-500 hover:bg-yellow-600">
+                    🔄 Reiniciar Estadísticas
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/trivia.js"></script>
+</body>
+</html>

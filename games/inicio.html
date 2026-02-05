@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decisiones de Vida - Inicio</title>
+    <link rel="stylesheet" href="../css/trivia3d.css">
+</head>
+<body>
+    <div id="introPantalla" class="fixed inset-0 bg-black text-white flex flex-col items-center justify-center text-center z-50">
+        <video id="introVideo" autoplay loop muted class="background-video">
+            <source src="../assets/1.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        
+        <!-- Logo OISS superior -->
+        <div class="logo-oiss-container">
+            <img src="../assets/oiss.png" alt="OISS" class="logo-oiss-main">
+        </div>
+        
+        <div class="video-overlay-content">
+            <h1 class="text-4xl md:text-6xl font-bold animate-fade-in-up">Decisiones de Vida</h1>
+            <p class="mt-4 text-xl md:text-2xl animate-fade-in-up delay-500">Una aventura inmersiva sobre tu futuro previsional</p>
+            <button onclick="window.location.href='oficina.html'" class="mt-8 bg-white text-black px-8 py-3 rounded-xl shadow-lg hover:bg-gray-300 animate-fade-in-up delay-1000 text-lg font-semibold">Empezar aventura</button>
+        </div>
+        
+        <!-- Texto "con el apoyo de:" -->
+        <p class="aecid-support-text">con el apoyo de:</p>
+        
+        <!-- Logo AECID inferior -->
+        <div class="logo-aecid-container">
+            <img src="../assets/españa.png" alt="AECID" class="logo-aecid">
+        </div>
+    </div>
+</body>
+</html>
