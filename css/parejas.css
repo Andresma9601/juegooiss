@@ -16,6 +16,7 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 8px;
+    padding-top: 80px; /* Ajustado para la nueva posición de logos */
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -449,6 +450,7 @@ body {
 @media (max-width: 768px) {
     .container {
         padding: 4px;
+        padding-top: 75px; /* Ajustado para móvil */
         gap: 4px;
     }
     
